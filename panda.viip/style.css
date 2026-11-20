@@ -1,0 +1,320 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050805;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    height: 85px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #183518;
+    background: #050805;
+}
+
+.logo h2 {
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #39ff14;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #39ff14;
+}
+
+.botao-topo {
+    color: #39ff14;
+    border: 1px solid #39ff14;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-topo:hover {
+    background: #39ff14;
+    color: black;
+}
+
+.perfil-instagram {
+    position: absolute;
+    top: 16px;
+    left: calc(5% - 45px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #39ff14;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.perfil-instagram img {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border: 2px solid #39ff14;
+    border-radius: 50%;
+}
+
+.perfil-instagram span {
+    font-size: 20px;
+}
+
+.perfil-instagram:hover {
+    transform: scale(1.08);
+    color: #39ff14;
+}
+
+.perfil-instagram:hover img {
+    box-shadow: 0 0 18px #39ff1470;
+}
+
+/* INÍCIO */
+
+.inicio {
+    position: relative;
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 80px 12%;
+    background:
+    radial-gradient(ellipse at 80% 50%, #123b14 0%, transparent 45%),
+    #050805;
+}
+
+.conteudo-inicio {
+    max-width: 650px;
+}
+
+.etiqueta {
+    color: #39ff14;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.inicio h1 {
+    font-size: 58px;
+    line-height: 1.15;
+    margin: 25px 0;
+}
+
+.inicio h1 span {
+    color: #39ff14;
+}
+
+.inicio p {
+    color: #aaa;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.botao-principal {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 28px;
+    background: #39ff14;
+    color: #050805;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px #39ff1470;
+}
+
+/* PRODUTOS */
+
+.produtos {
+    padding: 90px 8%;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-secao span {
+    color: #39ff14;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.titulo-secao h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.titulo-secao p {
+    color: #999;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.produto {
+    background: #0c130c;
+    border: 1px solid #1b351b;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+    border-color: #39ff14;
+    box-shadow: 0 10px 35px #39ff1415;
+}
+
+.imagem-produto {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto 25px;
+}
+
+.imagem-produto--menor {
+    max-width: 160px;
+}
+
+.produto > span {
+    color: #39ff14;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.produto h3 {
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.produto p {
+    color: #999;
+    line-height: 1.6;
+    min-height: 55px;
+}
+
+.botao-produto {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    padding: 13px;
+    color: #39ff14;
+    border: 1px solid #39ff14;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-produto:hover {
+    background: #39ff14;
+    color: black;
+}
+
+/* SOBRE */
+
+.sobre {
+    padding: 70px 20px;
+    text-align: center;
+    background: #0b120b;
+}
+
+.sobre h2 {
+    margin-bottom: 15px;
+}
+
+.sobre span {
+    color: #39ff14;
+}
+
+.sobre p {
+    color: #999;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    border-top: 1px solid #183518;
+}
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    .cabecalho {
+        padding: 20px;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .botao-topo {
+        display: none;
+    }
+
+    .inicio {
+        padding: 80px 25px;
+    }
+
+    .perfil-instagram {
+        left: -30px;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .grade-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-secao h2 {
+        font-size: 30px;
+    }
+}
